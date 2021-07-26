@@ -10,6 +10,13 @@ public class MovieController {
 
     private MovieServiceInterface movieService;
 
+    public MovieServiceInterface getMovieService() {
+        return movieService;
+    }
+
+    public void setMovieService(MovieServiceInterface movieService) {
+        this.movieService = movieService;
+    }
 
     public void addUsingConsole() {
         System.out.println( "Donnez-moi le titre du film" );
